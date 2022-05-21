@@ -1,0 +1,50 @@
+header {
+    padding-top: 1.5%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    .ativo {
+        margin-left: 50px;
+        color: $cor-letra;
+        font-weight: 900;
+        transition: 0.5s;
+        &:hover {
+            font-size: 19px;
+            transition: 0.5s;
+        }
+    }
+    .menu {
+        margin-left: 250px;
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                margin-right: 60px;
+                color: $cor-letra-segundaria;
+                transition: 0.5s;
+                &:hover {
+                    cursor: pointer;
+                    color: $cor-letra;
+                    font-size: 19px;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+    .user {
+        margin-right: 90px;
+        .btn1 {
+            width: 90px;
+            height: 30px;
+            margin-right: 20px;
+            @include StyleBotao;
+            background-image: linear-gradient(to right, rgb(138, 2, 162), rgb(255, 0, 234));
+        }
+        .btn2 {
+            width: 120px;
+            height: 30px;
+            @include StyleBotao;
+            background: rgb(129, 156, 210);
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.caixa {
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+    .part_1 {
+        width: 40%;
+        text-align: left;
+        justify-content: center;
+        h1 {
+            font-size: 80px;
+            color: $cor-letra;
+            cursor: pointer;
+        }
+        p {
+            color: $cor-letra-segundaria;
+            &:hover {
+                color: #070067;
+                transition: 0.6s;
+            }
+        }
+        button {
+            @include StyleBotao;
+            width: 170px;
+            height: 45px;
+            background-image: linear-gradient(to right, rgb(138, 2, 162), rgb(255, 0, 234));
+            &:hover {
+                transition: 0.5s;
+                margin: 10px;
+                font-size: 20px;
+                width: 200px;
+                height: 50px;
+            }
+        }
+    }
+    .part_2 {
+        padding-left: 10%;
+        img {
+            width: 100%;
+        }
+    }
+}
