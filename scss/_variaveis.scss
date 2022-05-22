@@ -5,3 +5,20 @@ $cor-letra:#070067;
 $cor-letra-segundaria:rgba(79, 91, 90, 0.727);
 $neutro:#fff;
 $font: sans-serif;
+$bgColor:rgb(218, 217, 217);
+// botao
+@mixin StyleBotao {
+    cursor: pointer;
+    margin-top: 5%;
+    border: none;
+    transition: 0.4s;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $neutro;
+    &:hover {
+        transition: 0.5s;
+        width: 130px;
+        font-size: 18px;
+    }
+}

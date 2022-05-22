@@ -1,13 +1,20 @@
+@import"./resposivo";
 .caixa {
     display: flex;
     justify-content: space-around;
     margin: 5%;
+    @include tablet {
+        display: block;
+    }
     .part_1 {
         width: 40%;
         text-align: left;
         justify-content: center;
+        @include tablet {
+            width: 100%;
+        }
         h1 {
-            font-size: 80px;
+            font-size: 5em;
             color: $cor-letra;
             cursor: pointer;
         }
@@ -36,6 +43,9 @@
         padding-left: 10%;
         img {
             width: 100%;
+        }
+        @include tablet {
+            display: none;
         }
     }
 }

@@ -1,4 +1,16 @@
 @import "./variaveis"; // arquivo de variaveis
-@import"./base"; // arquivo de configuração padrão dos elementos
 @import "./header"; // arquivo do menu
 @import"./conteudo"; // arquivo com o conteudo
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $cor-fundo;
+    font-family: $font;
+    @include tablet {
+        overflow-x: hidden;
+    }
+}
